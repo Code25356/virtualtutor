@@ -1,0 +1,19 @@
+env_variables:
+  # OpenAI API Configuration
+  OPENAI_API_KEY: "your-openai-api-key"
+  
+  # Google Cloud Configuration
+  GOOGLE_CLOUD_PROJECT: "your-project-id"
+  GOOGLE_APPLICATION_CREDENTIALS: "path/to/service-account.json"
+  
+  # Storage Configuration
+  STORAGE_BUCKET: "your-storage-bucket"
+  
+  # Security
+  SECRET_KEY: "your-secret-key"
+  
+  # API Configuration
+  YOUTUBE_API_KEY: "your-youtube-api-key"
+  
+  # Redis Configuration (for Celery)
+  REDIS_URL: "redis://localhost:6379/0"

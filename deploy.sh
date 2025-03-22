@@ -11,6 +11,12 @@ if [ ! -f "env_variables.yaml" ]; then
     exit 1
 fi
 
+# Check if SECRET_KEY is properly set
+if grep -q 'SECRET_KEY: "your-generated-secret-key"' env_variables.yaml; then
+    echo "❌ Default SECRET_KEY detected in env_variables.yaml. Please generate a secure key using backend/scripts/generate_key.py"
+    exit 1
+fi
+
 # Build frontend
 echo "📦 Building frontend..."
 cd frontend

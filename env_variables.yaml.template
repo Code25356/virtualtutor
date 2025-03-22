@@ -9,8 +9,8 @@ env_variables:
   # Storage Configuration
   STORAGE_BUCKET: "your-storage-bucket"
   
-  # Security
-  SECRET_KEY: "your-secret-key"
+  # Security (Generate using backend/scripts/generate_key.py)
+  SECRET_KEY: "your-generated-secret-key"
   
   # API Configuration
   YOUTUBE_API_KEY: "your-youtube-api-key"

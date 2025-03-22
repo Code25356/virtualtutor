@@ -16,6 +16,8 @@ def create_app(config_name='default'):
     # Load config
     if config_name == 'testing':
         app.config.from_object('config.TestingConfig')
+    elif config_name == 'development' or os.environ.get('FLASK_ENV') == 'development':
+        app.config.from_object('config.DevelopmentConfig')
     else:
         app.config.from_object('config.Config')
         

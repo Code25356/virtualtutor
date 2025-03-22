@@ -176,8 +176,26 @@ VITE_API_URL=http://localhost:5000/api
 Backend (.env):
 ```
 FLASK_ENV=development
-SECRET_KEY=your-secret-key
+SECRET_KEY=your-generated-secret-key  # Generate using scripts/generate_key.py
 ```
+
+### Secret Key Management
+
+For security reasons, the application requires a proper SECRET_KEY to be set. Follow these steps to generate and manage your secret keys:
+
+1. Generate a secure secret key using the provided script:
+   ```bash
+   cd backend
+   python scripts/generate_key.py
+   ```
+
+2. Add the generated key to your environment:
+   - For development: Add to your `.env` file
+   - For production: Add to your `env_variables.yaml` file
+
+3. Never commit your secret keys to version control
+
+4. Rotate your keys periodically for enhanced security
 
 ## License
 

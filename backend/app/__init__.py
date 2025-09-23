@@ -1,6 +1,6 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
-from celery import Celery
+# from celery import Celery  # Disabled for development
 import logging
 from logging.config import dictConfig
 from pythonjsonlogger import jsonlogger
@@ -8,7 +8,7 @@ import os
 
 # Initialize extensions
 db = SQLAlchemy()
-celery = Celery()
+# celery = Celery()  # Disabled for development
 
 def create_app(config_name='default'):
     app = Flask(__name__)
@@ -51,15 +51,15 @@ def create_app(config_name='default'):
     # Initialize extensions
     db.init_app(app)
     
-    # Configure Celery
-    celery.conf.update(
-        broker_url=app.config['CELERY_BROKER_URL'],
-        result_backend=app.config['CELERY_RESULT_BACKEND'],
-        task_serializer='json',
-        accept_content=['json'],
-        result_serializer='json',
-        timezone='UTC'
-    )
+    # Configure Celery - disabled for development
+    # celery.conf.update(
+    #     broker_url=app.config['CELERY_BROKER_URL'],
+    #     result_backend=app.config['CELERY_RESULT_BACKEND'],
+    #     task_serializer='json',
+    #     accept_content=['json'],
+    #     result_serializer='json',
+    #     timezone='UTC'
+    # )
     
     # Register blueprints
     from app.routes import video, quiz

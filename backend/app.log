@@ -25,3 +25,75 @@
 {"asctime": "2025-09-23 18:31:38,934", "levelname": "CRITICAL", "name": "celery.backends.redis", "message": "\nRetry limit exceeded while trying to reconnect to the Celery redis result store backend. The Celery application must be restarted.\n"}
 {"asctime": "2025-09-23 18:31:38,935", "levelname": "ERROR", "name": "app.routes.video", "message": "Error processing video: Error 111 connecting to localhost:6379. Connection refused."}
 {"asctime": "2025-09-23 18:31:38,936", "levelname": "INFO", "name": "werkzeug", "message": "127.0.0.1 - - [23/Sep/2025 18:31:38] \"\u001b[35m\u001b[1mPOST /api/videos/process HTTP/1.1\u001b[0m\" 500 -"}
+{"asctime": "2025-09-23 18:43:27,529", "levelname": "ERROR", "name": "celery.backends.redis", "message": "Connection to Redis lost: Retry (0/20) now."}
+{"asctime": "2025-09-23 18:43:27,530", "levelname": "ERROR", "name": "celery.backends.redis", "message": "Connection to Redis lost: Retry (1/20) in 1.00 second."}
+{"asctime": "2025-09-23 18:43:28,531", "levelname": "ERROR", "name": "celery.backends.redis", "message": "Connection to Redis lost: Retry (2/20) in 1.00 second."}
+{"asctime": "2025-09-23 18:43:29,532", "levelname": "ERROR", "name": "celery.backends.redis", "message": "Connection to Redis lost: Retry (3/20) in 1.00 second."}
+{"asctime": "2025-09-23 18:43:30,533", "levelname": "ERROR", "name": "celery.backends.redis", "message": "Connection to Redis lost: Retry (4/20) in 1.00 second."}
+{"asctime": "2025-09-23 18:43:31,535", "levelname": "ERROR", "name": "celery.backends.redis", "message": "Connection to Redis lost: Retry (5/20) in 1.00 second."}
+{"asctime": "2025-09-23 18:43:32,536", "levelname": "ERROR", "name": "celery.backends.redis", "message": "Connection to Redis lost: Retry (6/20) in 1.00 second."}
+{"asctime": "2025-09-23 18:43:33,537", "levelname": "ERROR", "name": "celery.backends.redis", "message": "Connection to Redis lost: Retry (7/20) in 1.00 second."}
+{"asctime": "2025-09-23 18:43:34,538", "levelname": "ERROR", "name": "celery.backends.redis", "message": "Connection to Redis lost: Retry (8/20) in 1.00 second."}
+{"asctime": "2025-09-23 18:43:35,539", "levelname": "ERROR", "name": "celery.backends.redis", "message": "Connection to Redis lost: Retry (9/20) in 1.00 second."}
+{"asctime": "2025-09-23 18:43:36,540", "levelname": "ERROR", "name": "celery.backends.redis", "message": "Connection to Redis lost: Retry (10/20) in 1.00 second."}
+{"asctime": "2025-09-23 18:43:37,541", "levelname": "ERROR", "name": "celery.backends.redis", "message": "Connection to Redis lost: Retry (11/20) in 1.00 second."}
+{"asctime": "2025-09-23 18:43:38,542", "levelname": "ERROR", "name": "celery.backends.redis", "message": "Connection to Redis lost: Retry (12/20) in 1.00 second."}
+{"asctime": "2025-09-23 18:43:39,543", "levelname": "ERROR", "name": "celery.backends.redis", "message": "Connection to Redis lost: Retry (13/20) in 1.00 second."}
+{"asctime": "2025-09-23 18:43:40,544", "levelname": "ERROR", "name": "celery.backends.redis", "message": "Connection to Redis lost: Retry (14/20) in 1.00 second."}
+{"asctime": "2025-09-23 18:43:41,545", "levelname": "ERROR", "name": "celery.backends.redis", "message": "Connection to Redis lost: Retry (15/20) in 1.00 second."}
+{"asctime": "2025-09-23 18:43:42,546", "levelname": "ERROR", "name": "celery.backends.redis", "message": "Connection to Redis lost: Retry (16/20) in 1.00 second."}
+{"asctime": "2025-09-23 18:43:43,547", "levelname": "ERROR", "name": "celery.backends.redis", "message": "Connection to Redis lost: Retry (17/20) in 1.00 second."}
+{"asctime": "2025-09-23 18:43:44,548", "levelname": "ERROR", "name": "celery.backends.redis", "message": "Connection to Redis lost: Retry (18/20) in 1.00 second."}
+{"asctime": "2025-09-23 18:43:45,549", "levelname": "ERROR", "name": "celery.backends.redis", "message": "Connection to Redis lost: Retry (19/20) in 1.00 second."}
+{"asctime": "2025-09-23 18:43:46,550", "levelname": "CRITICAL", "name": "celery.backends.redis", "message": "\nRetry limit exceeded while trying to reconnect to the Celery redis result store backend. The Celery application must be restarted.\n"}
+{"asctime": "2025-09-23 18:43:46,551", "levelname": "ERROR", "name": "app.routes.video", "message": "Error processing video: Error 111 connecting to localhost:6379. Connection refused."}
+{"asctime": "2025-09-23 18:43:46,552", "levelname": "INFO", "name": "werkzeug", "message": "127.0.0.1 - - [23/Sep/2025 18:43:46] \"\u001b[35m\u001b[1mPOST /api/videos/process HTTP/1.1\u001b[0m\" 500 -"}
+{"asctime": "2025-09-23 18:44:24,488", "levelname": "INFO", "name": "werkzeug", "message": "127.0.0.1 - - [23/Sep/2025 18:44:24] \"\u001b[31m\u001b[1mPOST /api/videos/process HTTP/1.1\u001b[0m\" 409 -"}
+{"asctime": "2025-09-23 18:44:29,418", "levelname": "ERROR", "name": "celery.backends.redis", "message": "Connection to Redis lost: Retry (0/20) now."}
+{"asctime": "2025-09-23 18:44:29,418", "levelname": "ERROR", "name": "celery.backends.redis", "message": "Connection to Redis lost: Retry (1/20) in 1.00 second."}
+{"asctime": "2025-09-23 18:44:30,419", "levelname": "ERROR", "name": "celery.backends.redis", "message": "Connection to Redis lost: Retry (2/20) in 1.00 second."}
+{"asctime": "2025-09-23 18:44:31,420", "levelname": "ERROR", "name": "celery.backends.redis", "message": "Connection to Redis lost: Retry (3/20) in 1.00 second."}
+{"asctime": "2025-09-23 18:44:32,421", "levelname": "ERROR", "name": "celery.backends.redis", "message": "Connection to Redis lost: Retry (4/20) in 1.00 second."}
+{"asctime": "2025-09-23 18:44:33,422", "levelname": "ERROR", "name": "celery.backends.redis", "message": "Connection to Redis lost: Retry (5/20) in 1.00 second."}
+{"asctime": "2025-09-23 18:44:34,423", "levelname": "ERROR", "name": "celery.backends.redis", "message": "Connection to Redis lost: Retry (6/20) in 1.00 second."}
+{"asctime": "2025-09-23 18:44:35,424", "levelname": "ERROR", "name": "celery.backends.redis", "message": "Connection to Redis lost: Retry (7/20) in 1.00 second."}
+{"asctime": "2025-09-23 18:44:36,425", "levelname": "ERROR", "name": "celery.backends.redis", "message": "Connection to Redis lost: Retry (8/20) in 1.00 second."}
+{"asctime": "2025-09-23 18:44:37,427", "levelname": "ERROR", "name": "celery.backends.redis", "message": "Connection to Redis lost: Retry (9/20) in 1.00 second."}
+{"asctime": "2025-09-23 18:44:38,428", "levelname": "ERROR", "name": "celery.backends.redis", "message": "Connection to Redis lost: Retry (10/20) in 1.00 second."}
+{"asctime": "2025-09-23 18:44:39,429", "levelname": "ERROR", "name": "celery.backends.redis", "message": "Connection to Redis lost: Retry (11/20) in 1.00 second."}
+{"asctime": "2025-09-23 18:44:40,430", "levelname": "ERROR", "name": "celery.backends.redis", "message": "Connection to Redis lost: Retry (12/20) in 1.00 second."}
+{"asctime": "2025-09-23 18:44:41,431", "levelname": "ERROR", "name": "celery.backends.redis", "message": "Connection to Redis lost: Retry (13/20) in 1.00 second."}
+{"asctime": "2025-09-23 18:44:42,432", "levelname": "ERROR", "name": "celery.backends.redis", "message": "Connection to Redis lost: Retry (14/20) in 1.00 second."}
+{"asctime": "2025-09-23 18:44:43,433", "levelname": "ERROR", "name": "celery.backends.redis", "message": "Connection to Redis lost: Retry (15/20) in 1.00 second."}
+{"asctime": "2025-09-23 18:44:44,434", "levelname": "ERROR", "name": "celery.backends.redis", "message": "Connection to Redis lost: Retry (16/20) in 1.00 second."}
+{"asctime": "2025-09-23 18:44:45,435", "levelname": "ERROR", "name": "celery.backends.redis", "message": "Connection to Redis lost: Retry (17/20) in 1.00 second."}
+{"asctime": "2025-09-23 18:44:46,436", "levelname": "ERROR", "name": "celery.backends.redis", "message": "Connection to Redis lost: Retry (18/20) in 1.00 second."}
+{"asctime": "2025-09-23 18:44:47,437", "levelname": "ERROR", "name": "celery.backends.redis", "message": "Connection to Redis lost: Retry (19/20) in 1.00 second."}
+{"asctime": "2025-09-23 18:44:48,438", "levelname": "CRITICAL", "name": "celery.backends.redis", "message": "\nRetry limit exceeded while trying to reconnect to the Celery redis result store backend. The Celery application must be restarted.\n"}
+{"asctime": "2025-09-23 18:44:48,439", "levelname": "ERROR", "name": "app.routes.video", "message": "Error processing video: Error 111 connecting to localhost:6379. Connection refused."}
+{"asctime": "2025-09-23 18:44:48,439", "levelname": "INFO", "name": "werkzeug", "message": "127.0.0.1 - - [23/Sep/2025 18:44:48] \"\u001b[35m\u001b[1mPOST /api/videos/process HTTP/1.1\u001b[0m\" 500 -"}
+{"asctime": "2025-09-23 18:55:59,897", "levelname": "INFO", "name": "werkzeug", "message": "127.0.0.1 - - [23/Sep/2025 18:55:59] \"\u001b[31m\u001b[1mPOST /api/videos/process HTTP/1.1\u001b[0m\" 409 -"}
+{"asctime": "2025-09-23 18:56:04,543", "levelname": "ERROR", "name": "celery.backends.redis", "message": "Connection to Redis lost: Retry (0/20) now."}
+{"asctime": "2025-09-23 18:56:04,544", "levelname": "ERROR", "name": "celery.backends.redis", "message": "Connection to Redis lost: Retry (1/20) in 1.00 second."}
+{"asctime": "2025-09-23 18:56:05,560", "levelname": "ERROR", "name": "celery.backends.redis", "message": "Connection to Redis lost: Retry (2/20) in 1.00 second."}
+{"asctime": "2025-09-23 18:56:06,561", "levelname": "ERROR", "name": "celery.backends.redis", "message": "Connection to Redis lost: Retry (3/20) in 1.00 second."}
+{"asctime": "2025-09-23 18:56:07,562", "levelname": "ERROR", "name": "celery.backends.redis", "message": "Connection to Redis lost: Retry (4/20) in 1.00 second."}
+{"asctime": "2025-09-23 18:56:08,564", "levelname": "ERROR", "name": "celery.backends.redis", "message": "Connection to Redis lost: Retry (5/20) in 1.00 second."}
+{"asctime": "2025-09-23 18:56:09,565", "levelname": "ERROR", "name": "celery.backends.redis", "message": "Connection to Redis lost: Retry (6/20) in 1.00 second."}
+{"asctime": "2025-09-23 18:56:10,567", "levelname": "ERROR", "name": "celery.backends.redis", "message": "Connection to Redis lost: Retry (7/20) in 1.00 second."}
+{"asctime": "2025-09-23 18:56:11,568", "levelname": "ERROR", "name": "celery.backends.redis", "message": "Connection to Redis lost: Retry (8/20) in 1.00 second."}
+{"asctime": "2025-09-23 18:56:12,569", "levelname": "ERROR", "name": "celery.backends.redis", "message": "Connection to Redis lost: Retry (9/20) in 1.00 second."}
+{"asctime": "2025-09-23 18:56:13,571", "levelname": "ERROR", "name": "celery.backends.redis", "message": "Connection to Redis lost: Retry (10/20) in 1.00 second."}
+{"asctime": "2025-09-23 18:56:14,572", "levelname": "ERROR", "name": "celery.backends.redis", "message": "Connection to Redis lost: Retry (11/20) in 1.00 second."}
+{"asctime": "2025-09-23 18:56:15,574", "levelname": "ERROR", "name": "celery.backends.redis", "message": "Connection to Redis lost: Retry (12/20) in 1.00 second."}
+{"asctime": "2025-09-23 18:56:16,581", "levelname": "ERROR", "name": "celery.backends.redis", "message": "Connection to Redis lost: Retry (13/20) in 1.00 second."}
+{"asctime": "2025-09-23 18:56:17,583", "levelname": "ERROR", "name": "celery.backends.redis", "message": "Connection to Redis lost: Retry (14/20) in 1.00 second."}
+{"asctime": "2025-09-23 18:56:18,584", "levelname": "ERROR", "name": "celery.backends.redis", "message": "Connection to Redis lost: Retry (15/20) in 1.00 second."}
+{"asctime": "2025-09-23 18:56:19,586", "levelname": "ERROR", "name": "celery.backends.redis", "message": "Connection to Redis lost: Retry (16/20) in 1.00 second."}
+{"asctime": "2025-09-23 18:56:20,587", "levelname": "ERROR", "name": "celery.backends.redis", "message": "Connection to Redis lost: Retry (17/20) in 1.00 second."}
+{"asctime": "2025-09-23 18:56:21,589", "levelname": "ERROR", "name": "celery.backends.redis", "message": "Connection to Redis lost: Retry (18/20) in 1.00 second."}
+{"asctime": "2025-09-23 18:56:22,591", "levelname": "ERROR", "name": "celery.backends.redis", "message": "Connection to Redis lost: Retry (19/20) in 1.00 second."}
+{"asctime": "2025-09-23 18:56:23,592", "levelname": "CRITICAL", "name": "celery.backends.redis", "message": "\nRetry limit exceeded while trying to reconnect to the Celery redis result store backend. The Celery application must be restarted.\n"}
+{"asctime": "2025-09-23 18:56:23,593", "levelname": "ERROR", "name": "app.routes.video", "message": "Error processing video: Error 111 connecting to localhost:6379. Connection refused."}
+{"asctime": "2025-09-23 18:56:23,594", "levelname": "INFO", "name": "werkzeug", "message": "127.0.0.1 - - [23/Sep/2025 18:56:23] \"\u001b[35m\u001b[1mPOST /api/videos/process HTTP/1.1\u001b[0m\" 500 -"}
+{"asctime": "2025-09-23 18:58:06,090", "levelname": "INFO", "name": "werkzeug", "message": "127.0.0.1 - - [23/Sep/2025 18:58:06] \"GET /api/videos/5/quiz HTTP/1.1\" 200 -"}

@@ -22,9 +22,9 @@ class Config:
     OPENAI_API_KEY = os.environ.get('OPENAI_API_KEY')
     GOOGLE_APPLICATION_CREDENTIALS = os.environ.get('GOOGLE_APPLICATION_CREDENTIALS')
     
-    # Cache
-    CACHE_TYPE = 'redis'
-    CACHE_REDIS_URL = os.environ.get('REDIS_URL', 'redis://localhost:6379/1')
+    # Cache - disabled for development
+    CACHE_TYPE = 'null'  # Disable caching
+    # CACHE_REDIS_URL = os.environ.get('REDIS_URL', 'redis://localhost:6379/1')
     CACHE_DEFAULT_TIMEOUT = 300
     
     # Task timeouts

@@ -5,12 +5,23 @@ from app.models.quiz import Quiz, Question, QuestionOption, UserAnswer
 from app.services.openai_service import OpenAIService
 from app.services.tts_service import TTSService
 import logging
+import os
 
 logger = logging.getLogger(__name__)
 bp = Blueprint('quiz', __name__, url_prefix='/api/videos')
 
-openai_service = OpenAIService(api_key='your-openai-key')  # Configure in environment
-tts_service = TTSService(credentials_path='path-to-credentials')  # Configure in environment
+# Initialize services with environment variables or None for development
+openai_api_key = os.getenv('OPENAI_API_KEY')
+google_credentials = os.getenv('GOOGLE_APPLICATION_CREDENTIALS')
+
+openai_service = None
+tts_service = None
+
+if openai_api_key and openai_api_key != 'your-openai-api-key':
+    openai_service = OpenAIService(api_key=openai_api_key)
+
+if google_credentials and google_credentials != './service-account.json':
+    tts_service = TTSService(credentials_path=google_credentials)
 
 @bp.route('/<int:video_id>/quiz', methods=['GET'])
 def get_quiz(video_id):
@@ -26,16 +37,38 @@ def get_quiz(video_id):
     if not quiz:
         try:
             # Generate new quiz
-            questions_data = openai_service.generate_quiz(
-                video.transcript,
-                language=video.language
-            )
+            if openai_service:
+                questions_data = openai_service.generate_quiz(
+                    video.transcript,
+                    language=video.language
+                )
+            else:
+                # Mock quiz data for development
+                questions_data = [
+                    {
+                        'text': 'Sample question about the video content?',
+                        'explanation': 'This is a sample explanation for development.',
+                        'options': [
+                            {'text': 'Option A', 'is_correct': True},
+                            {'text': 'Option B', 'is_correct': False},
+                            {'text': 'Option C', 'is_correct': False},
+                            {'text': 'Option D', 'is_correct': False}
+                        ]
+                    }
+                ]
             
             # Generate audio for questions and options
-            questions_data = tts_service.generate_quiz_audio(
-                questions_data,
-                language=video.language
-            )
+            if tts_service:
+                questions_data = tts_service.generate_quiz_audio(
+                    questions_data,
+                    language=video.language
+                )
+            else:
+                # Add empty audio URLs for development
+                for q_data in questions_data:
+                    q_data['audio_url'] = ''
+                    for opt_data in q_data['options']:
+                        opt_data['audio_url'] = ''
             
             # Create quiz in database
             quiz = Quiz(video_id=video_id, language=video.language)
